@@ -28,3 +28,18 @@
 // Array - object
 // Function - function(object)
 // Object - object
+
+//+++++++++++++++++++++++++++++++++++++++++++++++//
+//stack(primitive) and  Heap (Non Primitive )
+ let name1="Deepanshu "
+ let anothername=name1;
+ anothername="dubey"; // use of satck meemory in which copy is formed
+ console.log(anothername);
+  let user1={
+    name:"Deepanshu",
+    Email:"dev@gmail.com"
+  }
+let user2 =user1;
+
+user2.name="dev";
+console.log(user1)// here we use heap memory and the refernce .
