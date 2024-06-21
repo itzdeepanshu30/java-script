@@ -29,5 +29,26 @@ const obj3={...obj1,...obj2}
 
 
 
- console.log(Object.keys(tinderUser))// important
- console.log(tinderUser.hasOwnProperty('id'))
+ //console.log(Object.keys(tinderUser))// important
+ //console.log(tinderUser.hasOwnProperty('id'))
+
+
+ const course={
+    cousename:"computer scinence",
+    price:"999",
+    courseInstructor:"hitesh"
+ }
+ const{courseInstructor:instructor}=course
+ console.log(instructor)
+
+//  {
+//     "name":"Deepanshu"
+
+
+
+//  }
+ [
+    {},
+    {},
+    {}
+ ]
