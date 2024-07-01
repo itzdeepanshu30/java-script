@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMNET</title>
+</head>
+<body>
+    <h1>ASYNC CODE</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const x=new Date();
+const date=function(str){
+    console.log(str,x.toLocaleTimeString())
+}
+//const interval=setInterval(date,1000,"hii")
+//clearInterval(interval);
+document.querySelector('#start').addEventListener('click',()=>{
+  
+const interval=setInterval(date,1000,"hii")
+document.querySelector('#stop').addEventListener('click',()=>{
+    clearInterval(interval);
+})
+})
+document.querySelector('#stop').addEventListener('click',()=>{
+    clearInterval(interval);
+})
+</script>
+</html>
