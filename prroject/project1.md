@@ -1,3 +1,7 @@
+
+// link for project
+// https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html
+
 // project1
 
 ``` javascript
@@ -167,3 +171,34 @@ function endGame(){
 
 
 ```
+// soluntion 6
+
+
+``` javascript
+
+const random=function(){
+  const hex='0123456789ABCDEF';
+  let color='#'
+  for(let i=0;i<6;i++){
+    color+=hex[Math.floor(Math.random()*16)]
+  }
+  return color;
+}
+let intervalId;
+const starChanColr=function(){
+  if(!intervalId){
+  intervalId=setInterval(changeColor,1000)
+  }
+  function changeColor(){
+    document.body.style.backgroundColor=random();
+  }
+}
+let start=document.querySelector('#start').addEventListener('click',starChanColr)
+
+const stopChanColr=function(){
+  clearInterval(intervalId)
+  intervalId=null;
+}
+let stop=document.querySelector('#stop').addEventListener('click',stopChanColr)
+
+````
